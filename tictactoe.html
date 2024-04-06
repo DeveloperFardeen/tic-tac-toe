@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic Tac Toe Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <div class="cell first" data-cell></div>
+        <div class="cell second" data-cell></div>
+        <div class="cell third" data-cell></div>
+        <div class="cell fourth" data-cell></div>
+        <div class="cell fifth" data-cell></div>
+        <div class="cell sixth" data-cell></div>
+        <div class="cell seventh" data-cell></div>
+        <div class="cell eighth" data-cell></div>
+        <div class="cell nineth" data-cell></div>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content" id="popupContent">
+            <p id="popupText">Congratulations!</p>
+            <button id="restartButton" onclick="restartGame()">Restart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

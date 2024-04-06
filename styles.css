@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      font-family: cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      background-image: url(images/darkwall.jpg);
+      background-position: center;
+      background-size: cover;
+  }
+  
+  .game-container {
+      display: grid;
+      grid-template-columns: repeat(3, 150px);
+      grid-gap: 0px;
+  }
+  
+  .cell {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 120px;
+      color: #fff;
+      cursor: pointer;
+      transition: 1s;
+      /* animation: grow 1s forwards; */
+  }
+  
+  .cell.first {
+     box-shadow: 5px 5px 5px 3px rgba(0, 200, 225, 0.8)
+  }
+  
+  .cell.second {
+     box-shadow: 0px 5px 5px 3px rgba(0, 200, 225, 0.8)
+  }
+  
+  .cell.third {
+     box-shadow: -5px 5px 5px 3px rgba(0, 200, 225, 0.8)
+  }
+  
+  .cell.fourth {
+     box-shadow: 5px 0px 5px 3px rgba(0, 200, 225, 0.8)
+  }
+  
+  .cell.fifth {
+     box-shadow: 0px 0px 5px 3px rgba(0, 200, 225, 0.8)
+  }
+  
+  .cell.sixth {
+     box-shadow: -5px 0px 5px 3px rgba(0, 200, 225, 0.8)
+  }
+  
+  .cell.seventh {
+     box-shadow: 5px -5px 5px 3px rgba(0, 200, 225, 0.8)
+  }
+  
+  .cell.eighth {
+     box-shadow: 0px -5px 5px 3px rgba(0, 200, 225, 0.8)
+  }
+  
+  .cell.nineth {
+     box-shadow: -5px -5px 5px 3px rgba(0, 200, 225, 0.8)
+  }
+  
+  
+  @keyframes grow{
+    0%{
+      opacity: 0.1;
+    }
+    
+    100%{
+      opacity: 1;
+    }
+  }
+  
+  .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .popup-content {
+      background: linear-gradient(to bottom right, blue, pink);
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 55px;
+      font-weight: bolder;
+      color: red;
+  }
+  
+  #restartButton {
+    padding: 8px 16px;
+    background: linear-gradient(to bottom right, pink, blue);
+    border-radius: 50%;
+    box-shadow: 0px 0 5px 5px rgba(200, 200, 225, 0.6);
+    color: #fff;
+    border: none;
+    font-weight: bolder;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
